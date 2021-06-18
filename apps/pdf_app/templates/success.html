@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>¡Bienvenido/a {{ user.first_name }}!</h1>
+    <ul>
+        <li>{{ user.first_name }}</li>
+        <li>{{ user.last_name }}</li>
+        <li>{{ user.num_pa }}</li>
+        <li>{{ user.num_op }}</li>
+        <li>{{ user.monto_i }}</li>
+        <li>{{ user.fecha_suscr }}</li>
+        <li>{{ user.domic }}</li>
+    </ul>
+
+    <p>El Banco del Estado es dueño del Pagaré Tarjeta de Crédito N° {{ user.num_op }} , asignado con la
+        Operación Nº {{ user.num_pa }} , que se acompaña, por un monto original ascendente a
+        $ {{ user.monto_i }} y suscrito el {{ user.fecha_suscr }} por don(ña) {{ user.first_name }}
+        {{ user.last_name }} , chileno(a), ignoro profesión u oficio, domiciliado (a) en {{ user.domic }}</p>
+    
+</body>
+</html>
